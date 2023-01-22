@@ -1,13 +1,19 @@
 function greet(){
     var Name = prompt('What is your name?')
-    alert('Hello, ' + Name)
-    var age = prompt('How old are you?')
-    var Ageresult = parseInt(age)
-    if (!Ageresult) Number
-    var birthday = confirm('Have you had your birthday this year?')
-    if (true) {
-        alert(Date().getFullYear() - Ageresult)
+    if (Name) {
+        alert('Hello, ' + Name)
     } else {
-        alert(Date().getFullYear() - Ageresult +1)
+        alert('Hello')
+    }
+    var age = prompt('How old are you?')
+    var userAge = parseInt(age)
+    if (!userAge) Number
+    var birthday = confirm('Have you had your birthday this year?')
+    if (birthday) {
+        alert(new Date().getFullYear() - userAge)
+    } else {
+        alert(new Date().getFullYear() - userAge - 1)
     }
 }
+
+greet ()
